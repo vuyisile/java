@@ -1,6 +1,0 @@
-<application>
-  <component name="RefactoringSettings">
-    <option name="TURN_REFS_TO_SUPER_PREVIEW_USAGES" value="true" />
-    <option name="INTRODUCE_LOCAL_CREATE_FINALS" value="false" />
-  </component>
-</application>
