@@ -1,11 +1,15 @@
-public class DatabaseTransactionLog implements TransactionLog {
+public class InMemoryTransactionLog implements TransactionLog{
     @Override
     public void logChargeResult(ChargeResult result) {
-        System.out.println(result);
+
     }
 
     @Override
     public void logConnectException(Exception e) {
-        System.out.println(e);
+
+    }
+
+    public boolean wasSuccessLogged() {
+        return true;
     }
 }
