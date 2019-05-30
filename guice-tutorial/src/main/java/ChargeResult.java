@@ -1,4 +1,4 @@
-public class ChargeResult {
+public class ChargeResult extends Receipt {
     boolean isSuccess = false;
     public ChargeResult(boolean success){
         this.isSuccess = success;

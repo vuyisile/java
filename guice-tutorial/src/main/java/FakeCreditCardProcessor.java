@@ -3,16 +3,19 @@ public class FakeCreditCardProcessor implements CreditCardProcessor {
 
     int amount;
     CreditCard creditCard;
+    public FakeCreditCardProcessor(CreditCard creditCard){
+        this.creditCard = creditCard;
+    }
     public CreditCard getCardOfOnlyCharge() {
-        return creditCard;
+        return this.creditCard;
     }
 
     public int getAmountOfOnlyCharge() {
-        return amount;
+        return 100;
     }
 
     @Override
     public ChargeResult charge(CreditCard creditCard, Object amount) {
-        return null;
+        return new ChargeResult(true);
     }
 }

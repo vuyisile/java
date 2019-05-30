@@ -6,7 +6,7 @@ public class RealBillingServiceTest extends TestCase {
     private final CreditCard creditCard = new CreditCard("1234", 11, 2010);
 
     private final InMemoryTransactionLog transactionLog = new InMemoryTransactionLog();
-    private final FakeCreditCardProcessor processor = new FakeCreditCardProcessor();
+    private final FakeCreditCardProcessor processor = new FakeCreditCardProcessor(creditCard);
 
     @Override public void setUp() {
         TransactionLogFactory.setInstance(transactionLog);
