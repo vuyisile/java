@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RealBillingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-30T18:41:24" hostname="thecodingground-RF510-RF410-RF710" time="0.006">
+<testsuite name="RealBillingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-30T18:47:35" hostname="thecodingground-RF510-RF410-RF710" time="0.006">
   <properties/>
   <testcase name="testSuccessfulCharge" classname="RealBillingServiceTest" time="0.006"/>
   <system-out><![CDATA[100
-InMemoryTransactionLog@54ac7e5a
-ChargeResult@1a2bd6c3
-ChargeResult@1a2bd6c3
+InMemoryTransactionLog@2dc7633
+ChargeResult@479a891b
+ChargeResult@479a891b
 null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

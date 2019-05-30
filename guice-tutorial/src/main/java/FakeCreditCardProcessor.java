@@ -1,7 +1,7 @@
 public class FakeCreditCardProcessor implements CreditCardProcessor {
     //    to avoid charging a real credit card!
 
-    int amount;
+    int fakeAmount = 100;
     CreditCard creditCard;
     public FakeCreditCardProcessor(CreditCard creditCard){
         this.creditCard = creditCard;
@@ -11,7 +11,7 @@ public class FakeCreditCardProcessor implements CreditCardProcessor {
     }
 
     public int getAmountOfOnlyCharge() {
-        return 100;
+        return this.fakeAmount;
     }
 
     @Override
