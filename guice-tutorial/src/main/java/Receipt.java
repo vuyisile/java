@@ -13,7 +13,7 @@ public class Receipt {
     }
 
     public static boolean hasSuccessfulCharge() {
-        return hasSuccessfulCharge.isSuccess;
+          return hasSuccessfulCharge.isSuccess;
     }
 
     public int getAmountOfCharge() {
