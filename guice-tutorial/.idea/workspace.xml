@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c8dcb8e-f52d-4a40-87b8-1f69832c5547" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BillingModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="9c8dcb8e-f52d-4a40-87b8-1f69832c5547" name="Default Changelist" comment="Initializing Dependency Injection with Guice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RealBillingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RealBillingService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -50,22 +43,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BillingModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" />
+            <state relative-caret-position="30">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/RealBillingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -172,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/main/java/PayPal.java" />
         <option value="$PROJECT_DIR$/src/main/java/Annontations.java" />
         <option value="$PROJECT_DIR$/src/main/java/PayPalCreditCardProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BillingModule.java" />
         <option value="$PROJECT_DIR$/src/test/FakeCreditCardProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/ChargeResult.java" />
         <option value="$PROJECT_DIR$/src/test/java/Order.java" />
@@ -193,9 +181,10 @@
         <option value="$PROJECT_DIR$/src/main/java/FakeCreditCardProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Receipt.java" />
         <option value="$PROJECT_DIR$/src/main/java/PizzaOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RealBillingService.java" />
         <option value="$PROJECT_DIR$/src/test/java/RealBillingServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BillingModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RealBillingService.java" />
       </list>
     </option>
   </component>
@@ -398,7 +387,7 @@
       <workItem from="1559240299655" duration="1892000" />
       <workItem from="1559289722683" duration="10220000" />
       <workItem from="1559814758349" duration="1590000" />
-      <workItem from="1559822816696" duration="126000" />
+      <workItem from="1559822816696" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="recommit">
       <created>1559293965908</created>
@@ -421,16 +410,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559815918813</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initializing Dependency Injection with Guice">
+      <created>1559823252590</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559823252591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RealBillingServiceTest_testSuccessfulCharge - 2019.05.31 at 10h 17m 23s.xml">
-      <configuration name="RealBillingServiceTest.testSuccessfulCharge" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="RealBillingServiceTest_testSuccessfulCharge - 2019.05.31 at 11h 36m 41s.xml">
-      <configuration name="RealBillingServiceTest.testSuccessfulCharge" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="RealBillingServiceTest_testSuccessfulCharge - 2019.05.31 at 11h 36m 42s.xml">
       <configuration name="RealBillingServiceTest.testSuccessfulCharge" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -455,9 +445,15 @@
     <history-entry file="RealBillingServiceTest - 2019.06.06 at 12h 09m 15s.xml">
       <configuration name="RealBillingServiceTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="RealBillingServiceTest - 2019.06.06 at 14h 17m 11s.xml">
+      <configuration name="RealBillingServiceTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="RealBillingServiceTest - 2019.06.06 at 14h 17m 08s.xml">
+      <configuration name="RealBillingServiceTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52591000" />
+    <option name="totallyTimeSpent" value="53177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +468,7 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.30227274" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.30227274" />
       <window_info id="Structure" order="1" sideWeight="0.5012285" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -481,7 +477,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5012285" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32396695" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32396695" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14545454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -590,7 +586,8 @@
     <MESSAGE value="recommit" />
     <MESSAGE value="adding constructor for RealBillingService.class" />
     <MESSAGE value="removing the tearDown method and the setUp method" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing the tearDown method and the setUp method" />
+    <MESSAGE value="Initializing Dependency Injection with Guice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initializing Dependency Injection with Guice" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/example/pizza/PayPal.java" />
@@ -739,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealBillingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FakeCreditCardProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -828,6 +818,9 @@
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealBillingService.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
