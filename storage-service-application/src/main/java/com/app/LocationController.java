@@ -1,6 +1,35 @@
 package com.app;
 
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+
+@RestController
 public class LocationController {
+
+
+    private ArrayList<Location> locations = new ArrayList<>();
+
+    @RequestMapping(value = "/locations", method = RequestMethod.GET)
+    public ArrayList<Location> locations() {
+        return locations;
+    }
+
+    @RequestMapping(value = "/location", method = RequestMethod.GET)
+    public Location location(@RequestParam(value = "/location") int id) {
+        Optional<Location> locationFound = locations
+                .stream()
+                .filter(location -> location.getProvider_id() == id).findFirst();
+
+        return locationFound.orElse(null);
+    }
+
+    @PostMapping("/location")
+    public void location(@RequestBody Location location) {
+        locations.add(location);
+    }
 }
 
 /*app.post('/location', jwt.verifyJWT_MW, async function (req, res) {
