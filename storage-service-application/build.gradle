@@ -26,5 +26,10 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile 'org.springframework.data:spring-data-jpa'
+    compile "com.auth0:java-jwt:3.8.1"
+    compile("io.jsonwebtoken:jjwt:0.7.0")
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile('javax.xml.bind:jaxb-api:2.3.0')
     testCompile("junit:junit")
 }
