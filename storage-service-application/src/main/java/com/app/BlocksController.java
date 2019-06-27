@@ -1,7 +1,34 @@
 package com.app;
 
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+@RestController
 public class BlocksController {
+    private ArrayList<Blocks> blocks = new ArrayList<>();
+
+    @RequestMapping(value = "/blocks", method = RequestMethod.GET)
+    public ArrayList<Blocks> blocks() {
+        return blocks;
+    }
+
+    @RequestMapping(value = "/block", method = RequestMethod.GET)
+    public Blocks block(@RequestParam(value = "/block") String name) {
+        Optional<Blocks> blockFound = blocks
+                .stream()
+                .filter(block -> block.getBlockName().toLowerCase().equals(name.toLowerCase())).findFirst();
+
+        return blockFound.orElse(null);
+    }
+
+    @PostMapping("/block")
+    public void block(@RequestBody Blocks block) {
+        blocks.add(block);
+    }
 }
+
 
 
 //app.post('/block', jwt.verifyJWT_MW, async function (req, res) {

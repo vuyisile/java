@@ -8,9 +8,6 @@ import java.util.Optional;
 
 @RestController
 public class BusinessController {
-
-
-
     private ArrayList<Business> businesses = new ArrayList<>();
 
     @RequestMapping(value = "/businesses", method = RequestMethod.GET)
