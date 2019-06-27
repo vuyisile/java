@@ -1,6 +1,6 @@
 package com.app;
 
-public class Blocks {
+public class Block {
     int id;
     String blockName;
     int locationId;

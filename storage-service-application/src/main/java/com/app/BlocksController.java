@@ -7,16 +7,16 @@ import java.util.Optional;
 
 @RestController
 public class BlocksController {
-    private ArrayList<Blocks> blocks = new ArrayList<>();
+    private ArrayList<Block> blocks = new ArrayList<>();
 
     @RequestMapping(value = "/blocks", method = RequestMethod.GET)
-    public ArrayList<Blocks> blocks() {
+    public ArrayList<Block> blocks() {
         return blocks;
     }
 
     @RequestMapping(value = "/block", method = RequestMethod.GET)
-    public Blocks block(@RequestParam(value = "/block") String name) {
-        Optional<Blocks> blockFound = blocks
+    public Block block(@RequestParam(value = "/block") String name) {
+        Optional<Block> blockFound = blocks
                 .stream()
                 .filter(block -> block.getBlockName().toLowerCase().equals(name.toLowerCase())).findFirst();
 
@@ -24,7 +24,7 @@ public class BlocksController {
     }
 
     @PostMapping("/block")
-    public void block(@RequestBody Blocks block) {
+    public void block(@RequestBody Block block) {
         blocks.add(block);
     }
 }
@@ -43,7 +43,7 @@ public class BlocksController {
 //        }
 //        });
 //        app.get('/blocks', jwt.verifyJWT_MW, async function (req, res) {
-//        var blocks = await ref.getAllBlocks();
+//        var blocks = await ref.getAllBlock();
 //        if (blocks) {
 //        res.send(blocks).status(201).end();
 //        } else {

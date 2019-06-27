@@ -1,7 +1,38 @@
 package com.app;
 
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+
+@RestController
 public class UnitsController {
-}
+
+        private ArrayList<Unit> units = new ArrayList<>();
+
+        @RequestMapping(value = "/units", method = RequestMethod.GET)
+        public ArrayList<Unit> units() {
+            return units;
+        }
+
+        @RequestMapping(value = "/unit", method = RequestMethod.GET)
+        public Unit unit(@RequestParam(value = "/unit") String name) {
+            Optional<Unit> unitFound = units
+                    .stream()
+                    .filter(unit -> unit.getUnitName().toLowerCase().equals(name.toLowerCase())).findFirst();
+
+            return unitFound.orElse(null);
+        }
+
+        @PostMapping("/unit")
+        public void unit(@RequestBody Unit unit) {
+            units.add(unit);
+        }
+    }
+
+
+
 /*
 app.post('/unit', jwt.verifyJWT_MW, async function (req, res) {
   var details = req.body;
