@@ -9,10 +9,8 @@ import java.util.Optional;
 @RestController
 public class BusinessController {
     private ArrayList<Business> businesses = new ArrayList<>();
-    JJWT jwt =new JJWT();
     @RequestMapping(value = "/businesses", method = RequestMethod.GET)
     public ArrayList<Business> businesses() {
-        System.out.println("jws: "+ jwt.getJws());
         return businesses;
     }
 
@@ -27,7 +25,6 @@ public class BusinessController {
 
     @PostMapping("/business")
     public void business(@RequestBody Business business) {
-
         businesses.add(business);
     }
 }
